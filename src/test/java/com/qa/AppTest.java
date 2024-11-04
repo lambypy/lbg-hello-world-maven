@@ -1,6 +1,8 @@
 package com.qa;
 
 import org.junit.jupiter.api.Test;
+
+import static com.qa.App.getDistanceFromFive;
 import static com.qa.App.sayHello;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -47,7 +49,7 @@ public class AppTest
     @Test
     public void test_outputDistanceFromFive(){
         int number = 7;
-        int distanceFromFive = getDistanceFromFive(7);
-        assertEquals(distanceFromFive, 4);
+        int distanceFromFive = getDistanceFromFive(number);
+        assertEquals(2, distanceFromFive);
     }   
 }
