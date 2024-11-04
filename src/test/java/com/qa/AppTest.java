@@ -43,4 +43,11 @@ public class AppTest
         // Assert
         assertEquals( expectedResponse, actualResponse);
     }
+
+    @Test
+    public void test_outputDistanceFromFive(){
+        int number = 7;
+        int distanceFromFive = getDistanceFromFive(7);
+        assertEquals(distanceFromFive, 4);
+    }   
 }
